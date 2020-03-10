@@ -1,0 +1,219 @@
+/*
+Onder aan Code staat informatie die relevant kan zijn.
+
+  ===========The CSS CODE=========== */
+*{
+	font-family: fbahnschrift, sans-serif;
+	margin: 0;
+	text-decoration: none;
+}
+/*  ===========Header=========== */
+header{
+	width: 100%;
+	overflow: hidden;
+}
+.Banner{
+	width: 100%;
+	background-color: #D2F2CC;
+}
+.Banner img{
+	display: block;
+	margin: 0 auto;
+}
+nav{
+	display: block;
+	list-style: none;
+	margin: 10px auto;
+	width: 90%;
+}
+nav a{
+	text-align: center;
+}
+nav li{
+	border: #074117 solid 1px;
+	background-color: #1F7921;
+	border-radius: 5px;
+	color: white;
+	padding: 5px;
+}
+
+nav .Active{
+	background-color: #24a831;
+}
+
+nav li:hover{
+	background-color:  #24a831;
+}
+
+
+/*  ===========Content=========== */
+.main{
+	list-style: none;
+	width: 95%;
+	margin: 0 auto;
+}
+section{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	color: white;
+	text-align: center;
+	padding: 0 0 10px;
+}
+section li{
+	border: #1F7921 solid 1px;
+	background-color: #3FD64E;
+	border-radius: 5px;
+	margin: 0 0 3px;
+}
+
+/* ===Section 1=== 
+The slideshow & Googlemap*/
+
+.Section1 li{
+	background-color: transparent;
+	border: none;
+}
+
+.Slideshow{
+	width: 100%;
+}
+
+.Slide img{
+	display: block;
+	border-radius: 5px;
+	width: 100%;
+	height: auto;
+}
+
+#GMaps{
+	width: 100%;
+	height: 30vh;
+}
+
+/* ===Section 2=== 
+Gebruiker buttons*/
+
+.Section2 a{
+	color: white;
+}
+
+.Section2 li{
+	border: #074117 solid 1px;
+	background-color: #1F7921;
+}
+
+.Section2 li:hover{
+	background-color:  #24a831;
+}
+
+/* ===Section 3=== 
+Openings tijd & adres*/
+
+/* ===Section 4=== 
+News*/
+
+
+/*  ===========RESPONSIVE=========== */
+
+@media only screen and (min-width: 1000px){
+
+	/*  ===========Header=========== */
+	nav{
+		display: table;
+		width: auto;
+		width: fit-content;
+	}
+	nav a{
+		float: left;
+		font-size: 20px;
+		padding: 0 10px;
+	}
+	nav li{
+		padding: 5px 10px;
+		min-width: 150px;
+	}
+
+/*  ===========Content=========== */
+
+    .main{
+    	margin-top: 15px;
+    }
+
+    section{
+    	padding: 0 0 10px;
+	}
+
+	section li{
+		float: left;
+		margin: 0 0 0 10px;
+	}
+
+	/* ===Section 1=== 
+	The slideshow & Googlemap*/
+
+	.Section1 li{
+
+	}
+
+	.Slideshow{
+		width: calc(60% - 11px);
+	}
+
+	.Slide img{
+	height: 50vh;
+	}
+
+	.Maps{
+		width: calc(40% - 11px);
+	}
+
+	#GMaps{
+	height: 50vh;
+	}
+
+	/* ===Section 2===  
+	gebruiker buttons*/
+
+    .Section2 li{
+    	padding: 48px;
+    	min-width: 150px;
+    	width: calc(30% - 60px);	
+	}
+
+	/* ===Section 3===  
+	Openings tijd & adres**/
+
+	.Section3 li{
+		min-height: 200px;
+		font-weight: lighter;
+		width: calc(50% - 12px);
+		margin: 0 0 0 10px;
+	}
+
+	/* ===Section 4=== 
+	News*/
+
+	.News{
+		width: calc(100% - 12px);
+		min-height: 30px;
+	}
+}
+
+/* ==========={ZOMBIE CODE & INFO}=========== */ 
+/*  Colorcodes: groen
+van licht naar donker 
+
+    #9CE082
+    #3FD64E
+    #D2F2CC
+    #1F7921
+    #074117
+-------------------- Note --------------------
+
+    IE support niet: fit-content,half calc, html main;
+    Edge support niet: fit-content;
+
+    Bron: https://caniuse.com/
+*/

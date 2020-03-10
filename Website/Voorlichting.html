@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Apotheek J.Schut | Voorlichting</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="IMAGE/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="IMAGE/Logo.png">
+	<link rel="icon" type="image" href="IMAGE/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="CSS/Voorlichtingstyle.css">
+	<script type="text/javascript" src="JS/ApotKit.js"></script>
+
+	<style type="text/css">
+	@font-face{font-family: fbahnschrift; src: url(FONT/bahnschrift.ttf) format('truetype');}
+	</style>
+
+	<meta charset="utf-8">
+	<meta name="Author" content="Tyno schrama">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+<body onload="Voorlichting()">
+	<header>
+		<div class="Banner"><img id="Logo" src="IMAGE/Logo.png" height="110" width="110"></div>
+		<nav>
+			<a href="index.html"><li>Home</li></a>
+			<a href="Service.html"><li>Service</li></a>
+			<a href="Voorlichting.html"><li class="Active">Voorlichting</li></a>
+			<a href="#"><li>Mijn APO</li></a>
+		</nav>
+	</header>
+	<!-- Content -->
+	<div class="main">
+		<!-- Section 1 -->
+		<section class="Section1" id="sect1">
+			<div class="Voorlichting">
+				<div class="Voorlichtinformatie">
+					<h4>Gezondheidsinformatie</h4>
+					<p>
+						In samenwerking met Thuisarts.nl bieden wij u gezondheidsinformatie.Wilt u meer weten over een aandoeing. zoekt dan de naam in de onderstaande zoeklijst.<br>
+					</p>
+					<input id="Myinput" onkeyup="Woordfilter()" type="text" name="Zoeken" placeholder="Vul hier uw aandoening">
+					<div id="Info">
+					</div>
+			    </div>
+			</div>
+		</section>
+		<!-- Section 2 -->
+		<section class="Section2" id="sect2">
+			<li class="Openings info">
+				<h3>Openings tijden</h3>
+				<p>Ma 8:00 tot 18:00 <br>
+					Di 8:00 tot 18:00 <br>
+					Wo 8:00 tot 18:00 <br>
+					Do 8:00 tot 18:00 <br>
+					Vr 8:00 tot 18:00 <br>
+					Za 9:00 tot 13:00 <br>
+					Zo gesloten
+				</p>
+			</li>
+		    <li class="Adressen info">
+		    	<h3>Adres</h3>
+		    	<p>Hofstraat 13 <br>
+		    	   1741 CD Schagen <br>
+		    	   Tel: 0228-123123123 <br>
+		    	   Email: Apojshut@Apotheek.nl <br>
+		    	</p>
+		    </li>
+		</section>
+		<!-- Section END -->
+	</div>
+	<!-- END -->
+
+
+</body>
+</html>
